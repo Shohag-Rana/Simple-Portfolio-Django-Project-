@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	{{block.super}} service
+{% endblock title %}
+
+{% block link %}
+	{{block.super}}
+   	<link rel="stylesheet" type="text/css" href="{% static 'basicinfo/css/style1.css' %}">
+{% endblock link %}
+
+{% block content1 %}
+	<h1 class="head3">SERVICES</h1>
+	<div class="row text-center mt-5">
+		<div class="col-4">
+			<span class="icon"><i class="fab fa-python fa-3x"></i></span>
+			<h4 class="text-white mt-4">PYTHON</h4>
+			<p class="text-muted">Lorem ipsum dolor sit amet o it is, consectetur adipisicing elit </p>
+		</div>
+		<div class="col-4">
+			<span class="icon"><i class="fab fa-cc-discover fa-3x"></i></span>
+			<h4 class="text-white mt-4">Django</h4>
+			<p class="text-muted">Lorem ipsum dolor sit amet o it is, consectetur adipisicing elit </p>
+		</div>
+		<div class="col-4">
+			<span class="icon"><i class="fab fa-cuttlefish fa-3x"></i></i></span>
+			<h4 class="text-white mt-4">CPP</h4>
+			<p class="text-muted">Lorem ipsum dolor sit amet o it is, consectetur adipisicing elit </p>
+		</div>
+	</div>
+	<div class="row text-center mt-5">
+		<div class="col-4">
+			<span class="icon"><i class="fab fa-html5 fa-3x"></i></span>
+			<h4 class="text-white mt-4">HTML5</h4>
+			<p class="text-muted">Lorem ipsum dolor sit amet o it is, consectetur adipisicing elit </p>
+		</div>
+		<div class="col-4">
+			<span class="icon"><i class="fab fa-css3-alt fa-3x"></i></span>
+			<h4 class="text-white mt-4">CSS3</h4>
+			<p class="text-muted">Lorem ipsum dolor sit amet o it is, consectetur adipisicing elit </p>
+		</div>
+		<div class="col-4">
+			<span class="icon"><i class="fab fa-bootstrap fa-3x"></i></span>
+			<h4 class="text-white mt-4">BOOTSTRAP</h4>
+			<p class="text-muted">Lorem ipsum dolor sit amet o it is, consectetur adipisicing elit </p>
+		</div>
+	</div>
+{% endblock content1 %}

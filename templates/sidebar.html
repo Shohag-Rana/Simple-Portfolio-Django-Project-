@@ -1,0 +1,11 @@
+{% load static %}
+<div class="menu">
+  <img src="{% static 'images/myself.jpg' %}">
+    <h3 class="name mt-3">Shohag Rana</h3>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'service' %}">Service</a></li>
+      <li><a href="{% url 'skill' %}">Skill</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+</div>

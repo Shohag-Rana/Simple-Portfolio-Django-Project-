@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	{{block.super}} home
+{% endblock title %}
+
+{% block content1 %}
+	<img src="{% static 'images/9.jpg' %}" class="img-fluid d-block mx-auto img-thumbnail mb-5" height="200" width="200">
+	<h1 class="head2">Hello,</h1> 				
+	<p class="text1">I am <a href="https://www.facebook.com/profile.php?id=100009477209502">Shohag Rana</a> from Thakurgaon. I am study now <a href="https://mbstu.ac.bd/">Mawlana Bhashani Science and Technology University</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. <br><br>
+	The consequat Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="button-home">
+		<a href="{% url 'service' %}" type="button" class="btn btn-outline-danger btn-1">Hire Me</a>
+		<a href="{% url 'contact' %}" type="button" class="btn btn-outline-primary btn-2">Contact</a>
+	</div>
+<!-- <div class="wrapper">
+	<div class="d1">one</div>
+	<div class="d1">two</div>
+	<div class="d1">three</div>
+	<div class="d1">four</div>
+	<div class="d1">four</div>
+	<div class="d1">four</div>
+</div> -->
+<!-- {% if stuall %}
+
+	{% for stu in stuall %}
+		<p class="text-white">{{stu.id}}</p>
+		<p class="text-white">{{stu.stu_id}}</p>
+		<p class="text-white">{{stu.name}}</p>
+		<p class="text-white">{{stu.zipcode}}</p>
+		<p class="text-white">{{stu.state}}</p>
+		<br><br>
+	{% endfor %}
+{% else %}
+	<p class="text-white">No</p>
+{% endif %} -->
+{% endblock content1 %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+	{{block.super}} contact
+{% endblock title %}
+{% block link %}
+	{{block.super}}
+  <link rel="stylesheet" type="text/css" href="{% static 'basicinfo/css/contact.css' %}">
+{% endblock link %}
+
+{% block content1 %}
+
+	<h1 class="head3">CONTACT US</h1>
+	<p class="text4">Do you have any question? Please do not hesitate to contact. I will come back to you within a matter of hour to help</p>
+	<div class="row text-white">
+		<div class="col-8">
+			{% include 'basicinfo/form.html' %}
+		</div>
+		<div class="col-4 text-center">
+			  {% include 'basicinfo/address.html' %}
+		</div>
+	</div>
+
+{% endblock content1 %}

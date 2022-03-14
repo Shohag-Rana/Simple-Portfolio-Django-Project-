@@ -1,0 +1,12 @@
+.head3{
+	font-family: 'Pacifico', cursive;
+	font-size: 30px;
+	border-bottom: 2px solid white;
+	padding-bottom: 3px;
+	color: gold;
+	letter-spacing: 2px !important;
+}
+h3{
+	color: white;
+	margin-bottom: 5px;
+}

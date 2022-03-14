@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form test</title>
+</head>
+<style>
+	.somecss{
+		color: red;
+	}
+</style>
+<body>
+ 
+	<form action="" method="POST" novalidate>
+		{% csrf_token %}
+		{% for field in form.visible_fields %}
+			<p>{{field.label_tag}}
+			{{field}}</p>
+		{% endfor %}
+ 
+		{% for field in form.hidden_fields %}
+			 
+			{{field}}
+		{% endfor %}
+		<input type="Submit" name="Submit">
+	</form>
+
+</body>
+</html>

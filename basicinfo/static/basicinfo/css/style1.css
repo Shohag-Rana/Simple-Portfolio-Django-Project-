@@ -1,0 +1,14 @@
+.head3{
+	font-family: 'Pacifico', cursive;
+	font-size: 30px;
+	border-bottom: 2px solid white;
+	padding-bottom: 3px;
+	color: gold;
+}
+.icon{
+	color: red;
+	padding-bottom: 25px;
+}
+.icon:hover{
+	color: yellow;
+}

@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+ {% load static %}
+ <html>
+ <head>
+   <title>{% block title %} Resume| {% endblock title %}</title>
+   {% block link %}
+   	<link rel="stylesheet" type="text/css" href="{% static 'css/style1.css' %}">
+   {% endblock link %}
+   <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+ </head>
+ <body>
+ <div class="container">
+ 	<div class="row">
+ 		<div class="col-3 col-lg-3">
+ 			{% include 'sidebar.html' %}
+ 		</div>		
+ 		<div class="col-9 col-lg-9">
+ 			<div class="profiles">
+ 				{% block content1 %}
+	 				 
+	 			{% endblock content1 %}
+ 				
+ 			</div>
+ 		</div>		
+ 	</div>
+ </div>
+ <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+ <script type="text/javascript" src="{% static 'js/popper.js' %}"></script>
+ <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+ <script type="text/javascript" src="{% static 'js/fontawesome.js' %}"></script>
+ </body>
+ </html>

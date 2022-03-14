@@ -1,0 +1,22 @@
+.head3{
+	font-family: 'Pacifico', cursive;
+	font-size: 30px;
+	border-bottom: 2px solid white;
+	padding-bottom: 1.5px;
+	color: gold;
+	letter-spacing: 2px !important;
+}
+.text4{
+	color: white;
+	text-indent: 100px;
+	margin-top: 20px;
+	font-size: 12.5px;
+	margin-top: 10px;
+	margin-bottom: 55px;
+}
+.bt1{
+	width: 100% !important;
+}
+.icon2{
+	color: red;
+}
